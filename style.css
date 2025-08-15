@@ -251,11 +251,11 @@
 
     @media screen and (max-width: 767.98px) {
         .logo-nome {
-            font-size: 1.2em !important;
+            font-size: 1em !important;
         }
     
         #header-fixado .navbar-brand img {
-            width: 2.5rem;
+            width: 2.3rem;
         }
 
         #header-solto .navbar-brand img {
@@ -263,7 +263,7 @@
         }
         
         #header-solto .menu-lateral {
-            padding-left: 8.5em;
+            padding-left: 4em;
         }
     
         .menu-lateral i {

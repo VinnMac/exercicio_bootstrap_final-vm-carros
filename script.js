@@ -6,7 +6,7 @@ $(document).ready(function() {
     $(window).on('scroll', function() {
         if ($(window).scrollTop() > gatilhoScroll) {
             $('#header-solto').css('top', '0');
-            $('header-fixado').fadeOut();
+            $('#header-fixado').fadeOut();
         } else {
             $('#header-solto').css('top', '-100px');
             $('#header-fixado').fadeIn();
