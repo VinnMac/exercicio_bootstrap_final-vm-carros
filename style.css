@@ -1,6 +1,5 @@
     body {
         font-family: Roboto, sans-serif;
-    
     }
 
     #header-fixado:before {
@@ -59,6 +58,10 @@
     .logo-nome:hover,
     #nav-menu-alt .nav-item a:hover,
     .logo-nome:hover {
+        color: #fff;
+    }
+    
+    #header-solto .nav-link.active {
         color: #fff;
     }
 
