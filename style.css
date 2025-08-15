@@ -1,0 +1,387 @@
+    body {
+        font-family: Roboto, sans-serif;
+    
+    }
+
+    #header-fixado:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent);
+        z-index: -1;
+    }
+
+    #header-fixado {
+        background: transparent;
+    }
+
+    #header-solto {
+        position: fixed;
+        background-color: #1d1d1d;
+        top: -100px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        transition: top 0.3s ease;
+        z-index: 4;
+    }
+
+    .logo-nome, 
+    h2,
+    h5,
+    #sobre,
+    label {
+        font-family: "Oswald", sans-serif;
+    }
+
+    .logo-nome {
+        font-weight: 350;
+        color: #fff;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+    }
+    
+    #header-fixado .navbar-brand img {
+        width: 2.8rem;
+    }
+
+    #header-solto .navbar-brand img {
+        width: 3.5rem;
+    }
+
+    #nav-menu .nav-item a,
+    #nav-menu-alt .nav-item a {
+        color: #D6D6D6;
+    }
+
+    #nav-menu .nav-item a:hover,
+    .logo-nome:hover,
+    #nav-menu-alt .nav-item a:hover,
+    .logo-nome:hover {
+        color: #fff;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    .menu-lateral a {
+        color: #fff;
+        font-size: 1.2em;
+    }
+
+    .menu-lateral a:hover {
+        color: #fff;
+    }
+
+    .carousel-item img {
+        object-fit: cover;
+        height: 680px;
+    }
+
+    #carousel::before,
+    .novo-carro::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 10%, transparent 100%);
+        z-index: 1;
+    }
+
+    .carousel-caption {
+        z-index: 3;
+        left: -45%;
+        top: 35%;
+    }
+
+    .carousel-caption p {
+        text-transform: uppercase;
+    }
+
+    .carousel-caption p,
+    #novos p {
+        padding-bottom: 1.5rem;
+        font-size: .8em;
+    }
+    
+    .carousel-indicators {
+        z-index: 3;
+        top: 80%;
+        left: -60%;
+    }
+
+    h2,
+    #sobre h3 {
+        font-size: 2.3em;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    #chamada .row > p {
+        color: #707070;
+        text-transform: uppercase;
+    }
+
+    #novos .novo-carro {
+        position: relative;
+    }
+
+    #novos img {
+        width: 100%;
+        display: block;
+    }
+
+    #novos .caption {
+        position: absolute;
+        z-index: 3;
+        left: 7%;
+        top: 20%;
+        color: #fff;
+    }
+
+    #estoque {
+        background-color: #fff;
+    }
+
+    #estoque h5,
+    #pecas h5 {
+        font-weight: 350;
+    }
+
+    #nav-estoque .nav-link {
+        color: #707070;
+        border: 1px solid #707070;
+    }
+
+    #nav-estoque .nav-link.active {
+        background-color: #0d6dfd17;
+        border: 1px solid #0d6dfd17;
+        color: #0d6efd;
+    }
+
+    #nav-estoque .nav-link:hover {
+        background-color: #0d6dfd17;
+        border: 1px solid #0d6dfd61;
+        color: #0d6efd;
+    }
+
+    .card {
+    border: 2px solid rgba(204, 204, 204, 0); /* borda invisível p/ efeito transition */
+    border-radius: 8px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* sombra invisível p/ mesmo efeito */
+    transition: border-color 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.card:hover {
+    cursor: pointer;
+    border-color: rgba(204, 204, 204, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+    .preco p {
+        font-size: 0.7em;
+    }
+
+    #estoque .preco p {
+        color: #707070;
+    }
+
+    #pecas .preco p {
+        color: #d4d4d4;
+    }
+
+    #nav-pecas .nav-link {
+        color: #fff;
+        border: 1px solid #fff;
+    }
+
+    #nav-pecas .nav-link.active {
+        background-color: #0d6dfd17;
+        border: 1px solid #0d6dfd61;
+        color: #0d6efd;
+    }
+
+    #nav-pecas .nav-link:hover {
+        background-color: #0d6dfd2d;
+        border: 1px solid #0468fe61;
+        color: #0d6efd;
+    }
+
+    #sobre p {
+        font-weight: 350;
+        font-size: 1.1em;
+    }
+
+    .quem-somos {
+        padding-left: 1.5em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+        font-weight: 380;
+        text-transform: uppercase;
+    }
+
+    .nossos-valores {
+        background-color: #f7f7f7;
+    }
+
+    textarea {
+        resize: none;
+        height: 150px;;
+    }
+
+    #contato label {
+        color: #707070;
+    }
+
+    .btn-close {
+        transform: scale(0.8);
+    }
+
+    #modal-localizacao li {
+        list-style: none;
+    }
+
+    footer {
+        background-color: #1d1d1d;
+    }
+
+    @media screen and (max-width: 767.98px) {
+        .logo-nome {
+            font-size: 1.2em !important;
+        }
+    
+        #header-fixado .navbar-brand img {
+            width: 2.5rem;
+        }
+
+        #header-solto .navbar-brand img {
+            width: 3rem;
+        }
+        
+        #header-solto .menu-lateral {
+            padding-left: 8.5em;
+        }
+    
+        .menu-lateral i {
+            font-size: 0.7em !important;
+        }
+
+        #carousel img {
+            max-height: 530px;
+        }
+
+    
+        .carousel-caption {
+            left: 15%;
+            top: 65%;
+        }
+
+        .carousel-caption p,
+        #novos p {
+            padding-bottom: 0;
+        }
+        
+        .carousel-indicators {
+            top: 95%;
+            left: 0%;
+        }
+
+        #chamada h2 {
+            font-size: 2.5em;
+        }
+
+        #chamada p {
+            font-size: 1.2em;
+        }
+
+        #chamada i {
+            font-size: 3em !important;
+        }
+
+        #chamada .btn {
+            padding: 1em 6em !important;
+            margin-bottom: 2em;
+        }
+
+        #novos .caption {
+            left: 7%;
+            top: 7%;
+            color: #fff;
+        }
+
+        #novos h2 {
+            font-size: 1em;
+        }
+
+        #novos h3 {
+            font-size: 1.5em;
+        }
+
+        #novos p {
+            font-size: .8em !important;
+        }
+
+        #novos .btn {
+            font-size: 1.1em;
+            padding: 0 2em !important;
+        }
+
+        #nav-estoque button,
+        #nav-pecas button {
+            margin-bottom: 1em !important;
+        }
+
+        #sobre .col-sm-12 {
+            text-align: center ;
+        }
+
+            .quem-somos {
+        padding: 0 1em;
+    }
+
+        #sobre .col-sm-12 p {
+            font-size: 1.3em;
+        }
+
+        footer p {
+            text-align: center;
+        }
+
+        #social-links {
+            justify-content: center !important;
+        }
+
+        #social-links a {
+            padding-left: 1em;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 991.98px) {
+        .logo-nome {
+            font-size: 1.8em !important;
+        }
+    
+        #header-fixado .navbar-brand img {
+            width: 3.5rem;
+        }
+
+        #header-solto .navbar-brand img {
+            width: 4.8rem;
+        }
+
+                #header-fixado .menu-lateral {
+            padding-left: 18em;
+        }
+        
+        #header-solto .menu-lateral {
+            padding-left: 27em;
+        }
+
+        #social-links a {
+            padding-left: 1em;
+        }
+    }
